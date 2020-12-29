@@ -54,6 +54,15 @@ public class ArrayUtil {
             a[i] = max;
         }
     }
+    public void selectionSort(int [] a) {
+        selectionSortAscending(a);
+    }
+    public void selectionSort(int [] a, boolean descending) {
+        if(descending)
+            selectionSortDescending(a);
+        else
+            selectionSortAscending(a);
+    }
 
     public void bubbleSort(int [] a) {
         bubbleSortAscending(a);
