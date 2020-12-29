@@ -38,6 +38,23 @@ public class ArrayUtil {
      }
     }
 
+    public static void selectionSortDescending(int [] a) {
+        int max, maxIndex;
+        for(int i = 0; i < a.length - 1; i++) {
+            max = a[i];
+            maxIndex = i;
+
+            for(int k = i + 1; k < a.length; k++){
+                if(a[k] < max) {
+                    max = a[k];
+                    maxIndex = k;
+                }
+            }
+            a[maxIndex] = a[i];
+            a[i] = max;
+        }
+    }
+
     public void bubbleSort(int [] a) {
         bubbleSortAscending(a);
     }
