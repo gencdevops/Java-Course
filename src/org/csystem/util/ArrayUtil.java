@@ -18,7 +18,26 @@ public class ArrayUtil {
             for(int k = 0; k < a.length - 1 - i; k++)
                 if(a[k + 1] > a[k])
                     swap(a, k,k+1);
+
     }
+
+    public static void selectionSortAscending(int [] a) {
+     int min, minIndex;
+     for(int i = 0; i < a.length - 1; i++) {
+         min = a[i];
+         minIndex = i;
+
+         for(int k = i + 1; k < a.length; k++){
+             if(a[k] < min) {
+                 min = a[k];
+                 minIndex = k;
+             }
+         }
+         a[minIndex] = a[i];
+         a[i] = min;
+     }
+    }
+
     public void bubbleSort(int [] a) {
         bubbleSortAscending(a);
     }
