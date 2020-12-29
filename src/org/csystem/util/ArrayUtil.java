@@ -6,6 +6,28 @@ package org.csystem.util;
 import java.util.Random;
 
 public class ArrayUtil {
+    public static void bubbleSortAscending(int [] a) {
+        for(int i = 0; i < a.length - 1; i++)
+            for(int k = 0; k < a.length - 1 - i; k++)
+                if(a[k + 1] < a[k])
+                    swap(a, k,k+1);
+    }
+
+    public static void bubbleSortDescending(int [] a) {
+        for(int i = 0; i < a.length - 1; i++)
+            for(int k = 0; k < a.length - 1 - i; k++)
+                if(a[k + 1] > a[k])
+                    swap(a, k,k+1);
+    }
+    public void bubbleSort(int [] a) {
+        bubbleSortAscending(a);
+    }
+    public void bubbleSort(int [] a, boolean descending) {
+        if(descending)
+            bubbleSortDescending(a);
+        else
+            bubbleSortAscending(a);
+    }
     public static void display(int [] a)
     {
         display(1, a);
