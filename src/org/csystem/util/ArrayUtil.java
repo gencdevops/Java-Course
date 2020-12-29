@@ -98,6 +98,13 @@ public class ArrayUtil {
         System.out.print(end);
     }
 
+    public static int [] getHistogramData(int [] a , int n) {
+        int [] counts = new int [n + 1];
+        for(int i = 0; i < a.length; i++)
+            counts[a[i]]++;
+        return counts;
+    }
+
     public static void fillArrayRandom(Random r, int [] a, int min, int max)
     {
         for (int i = 0; i < a.length; ++i)
