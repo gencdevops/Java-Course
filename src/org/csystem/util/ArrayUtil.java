@@ -157,6 +157,13 @@ public class ArrayUtil {
         for (int i = 0; i < halfLen; ++i)
             swap(a, i, a.length - 1 - i);
     }
+    public static void reverse(char [] chars)
+    {
+        int halfLen = chars.length / 2;
+
+        for (int i = 0; i < halfLen; ++i)
+            swap(chars , i, chars.length - 1 - i);
+    }
 
     public static void shuffle(int [] a, int n)
     {
@@ -190,6 +197,14 @@ public class ArrayUtil {
     public static void swap(int [] a, int i, int k)
     {
         int temp;
+
+        temp = a[i];
+        a[i] = a[k];
+        a[k] = temp;
+    }
+    public static void swap(char [] a, int i, int k)
+    {
+        char temp;
 
         temp = a[i];
         a[i] = a[k];
