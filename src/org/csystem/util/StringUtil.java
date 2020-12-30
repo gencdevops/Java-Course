@@ -19,6 +19,13 @@ public class StringUtil {
 
         return toUpperCase(s.charAt(0)) + s.substring(1).toLowerCase();
     }
+    public static String changeCase(String s) {
+        char [] chars = s.toCharArray();
+
+        for(int i = 0; i < chars.length; i++)
+            chars[i] = Character.isUpperCase(chars[i]) ? Character.toLowerCase(chars[i]) : Character.toUpperCase(chars[i]);
+        return String.valueOf(chars);
+    }
 
     public static int countString(String s1, String s2)
     {
