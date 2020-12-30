@@ -97,6 +97,18 @@ public class ArrayUtil {
 
         System.out.print(end);
     }
+    public static void drawHistogram(int [] data , int n , char ch) {
+        int maxVal = max(data);
+
+        for(int i = 0; i < data.length; i++)  {
+            int nVal = (int)Math.floor(data[i] * n / (double)maxVal);
+
+            while(nVal-- > 0)
+                System.out.print(ch);
+
+            System.out.println();
+        }
+    }
 
     public static int [] getHistogramData(int [] a , int n) {
         int [] counts = new int [n + 1];
