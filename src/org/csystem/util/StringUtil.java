@@ -173,12 +173,11 @@ public class StringUtil {
 
     public static String reverse(String s)
     {
-        String rev = "";
+        char [] chars = s.toCharArray();
 
-        for (int i = s.length() - 1; i >= 0; --i)
-            rev += s.charAt(i);
+        ArrayUtil.reverse(chars);
 
-        return rev;
+        return String.valueOf(chars);
     }
 
     public static String trimLeading(String s)
