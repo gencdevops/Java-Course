@@ -54,13 +54,13 @@ public class StringUtil {
 
     public static String getRandomText(Random r, int n, String sourceText)
     {
-        String str = "";
+
         int length = sourceText.length();
-
+        char [] chars = new char[n];
         for (int i = 0; i < n; ++i)
-            str += sourceText.charAt(r.nextInt(length));
+            chars[i] = sourceText.charAt(r.nextInt(length));
 
-        return str;
+        return String.valueOf(chars);
     }
 
     public static String getRandomTextTR(Random r, int n)
