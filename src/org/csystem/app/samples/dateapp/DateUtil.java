@@ -2,6 +2,7 @@ package org.csystem.app.samples.dateapp;
 
 public class DateUtil {
 	public static int [] daysOfMonths = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	public static String [] daysOfWeekTR = {"Pazar" , "Pazartesi" , "Salı" , "Çarşamba", "Perşembe" , "Cuma" , "Cumartesi"};
 	public static void displayDateTR(int day, int month, int year)
 	{
 		int dayOfWeek;
@@ -12,31 +13,8 @@ public class DateUtil {
 			System.out.println("Geçersiz tarih");
 			return;
 		}
-		
-		switch (dayOfWeek) {
-		case 0:
-			System.out.printf("%02d/%02d/%04d Pazar%n", day, month, year);
-			break;
-		case 1:
-			System.out.printf("%02d/%02d/%04d Pazartesi%n", day, month, year);
-			break;
-		case 2:
-			System.out.printf("%02d/%02d/%04d Salı%n", day, month, year);
-			break;
-		case 3:
-			System.out.printf("%02d/%02d/%04d Çarşamba%n", day, month, year);
-			break;
-		case 4:
-			System.out.printf("%02d/%02d/%04d Perşembe%n", day, month, year);
-			break;
-		case 5:
-			System.out.printf("%02d/%02d/%04d Cuma%n", day, month, year);
-			break;
-		case 6:
-			System.out.printf("%02d/%02d/%04d Cumartesi%n", day, month, year);
-			break;
-		}
-		
+		System.out.printf("%02d/%02d/%04d %s%n", day, month, year , daysOfWeekTR[dayOfWeek]);
+
 		if (isWeekend(day, month, year))
 			System.out.println("Hafta sonu geldi kurs var. Tekrar yaptınız mı?!!!");
 		else
