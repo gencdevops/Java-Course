@@ -1,6 +1,7 @@
 package org.csystem.app.samples.dateapp;
 
 public class DateUtil {
+	public static int [] daysOfMonths = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	public static void displayDateTR(int day, int month, int year)
 	{
 		int dayOfWeek;
@@ -64,35 +65,16 @@ public class DateUtil {
 	{
 		if (!isValidDate(day, month, year))
 			return -1;
-		
+
+
+
 		int dayOfYear = day;
 		
-		switch (month - 1) {
-		case 11:
-			dayOfYear += 30;
-		case 10:
-			dayOfYear += 31;
-		case 9:
-			dayOfYear += 30;
-		case 8:
-			dayOfYear += 31;
-		case 7:
-			dayOfYear += 31;
-		case 6:
-			dayOfYear += 30;
-		case 5:
-			dayOfYear += 31;
-		case 4:
-			dayOfYear += 30;
-		case 3:
-			dayOfYear += 31;
-		case 2:
-			dayOfYear += 28;
-			if (isLeapYear(year))
-				++dayOfYear;
-		case 1:
-			dayOfYear += 31;		
-		}
+		for (int m = month -1; m >= 1; m--)
+			dayOfYear += daysOfMonths[m];
+
+		if(month > 2 && isLeapYear(year))
+			dayOfYear++;
 		
 		return dayOfYear;
 	}
@@ -122,22 +104,8 @@ public class DateUtil {
 	
 	public static int getDays(int month, int year)
 	{
-		int days = 31;
+		return month == 2 && isLeapYear(year) ? 29 : daysOfMonths[month];
 
-		switch (month) {
-		case 4:
-		case 6:
-		case 9:
-		case 11:
-			days = 30;
-			break;
-		case 2:
-			days = 28;
-			if (isLeapYear(year))
-				++days;
-		}
-		
-		return days;
 	}
 	
 	public static boolean isLeapYear(int year)
