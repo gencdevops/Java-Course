@@ -1,3 +1,3 @@
 # JavaCourse
 Java Examples
-<h3> Yazdığım küçük uygulamalar ve yardımcı sınıflardan oluşmaktadır. </h3>
+<h3> It consists of small applications and utility classes that I have written. </h3>
