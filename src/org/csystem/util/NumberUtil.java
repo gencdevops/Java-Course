@@ -1,4 +1,4 @@
-/*----------------------------------------------------------------------------------------------------------------------	
+/*----------------------------------------------------------------------------------------------------------------------
 	NumberUtil sınıfı
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.util;
@@ -9,6 +9,19 @@ import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
 public class NumberUtil {
+    public static int [] getDigits(long val, int n)
+    {
+        val = Math.abs(val);
+        int [] digits = new int[val == 0 ? 1 : (int)(Math.log10(val) / n) + 1];
+        int len = digits.length;
+        int powerOfTen = (int)Math.pow(10, n);
+
+        for (int i = 0; i < len; digits[len - 1 - i] = (int)(val % powerOfTen),  val /= powerOfTen, ++i)
+            ;
+
+        return digits;
+    }
+
     public static int countDigits(int val)
     {
         return val == 0 ? 1 : (int) log10(abs(val)) + 1;
@@ -24,16 +37,19 @@ public class NumberUtil {
         return result;
     }
 
-    public static int [] getDigits(int val)
+    public static int [] getDigits(long val)
     {
-        val = Math.abs(val);
-        int [] digits = new int[countDigits(val)];
-        int len = digits.length;
+        return getDigits(val, 1);
+    }
 
-        for (int i = 0; i < len; digits[len - 1 - i] = val % 10,  val /= 10, ++i)
-            ;
+    public static int [] getDigitsInTwos(long val)
+    {
+        return getDigits(val, 2);
+    }
 
-        return digits;
+    public static int [] getDigitsInThrees(long val)
+    {
+        return getDigits(val, 3);
     }
 
     public static int getDigitsSum(int val)
@@ -66,8 +82,6 @@ public class NumberUtil {
 
         return val;
     }
-
-
 
     public static int getNextFibonacciNumber(int val)
     {

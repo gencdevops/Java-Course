@@ -11,7 +11,6 @@ import static java.lang.Character.toUpperCase;
 import java.util.Random;
 
 public class StringUtil {
-
     public static String capitalize(String s)
     {
         if (s.isBlank())
@@ -19,11 +18,14 @@ public class StringUtil {
 
         return toUpperCase(s.charAt(0)) + s.substring(1).toLowerCase();
     }
-    public static String changeCase(String s) {
+
+    public static String changeCase(String s)
+    {
         char [] chars = s.toCharArray();
 
-        for(int i = 0; i < chars.length; i++)
+        for (int i = 0; i < chars.length; ++i)
             chars[i] = Character.isUpperCase(chars[i]) ? Character.toLowerCase(chars[i]) : Character.toUpperCase(chars[i]);
+
         return String.valueOf(chars);
     }
 
@@ -61,9 +63,9 @@ public class StringUtil {
 
     public static String getRandomText(Random r, int n, String sourceText)
     {
-
         int length = sourceText.length();
         char [] chars = new char[n];
+
         for (int i = 0; i < n; ++i)
             chars[i] = sourceText.charAt(r.nextInt(length));
 
@@ -150,6 +152,21 @@ public class StringUtil {
                 return false;
 
         return true;
+    }
+
+    public static String join(String [] str, char delimiter)
+    {
+        return  join(str, delimiter + "");
+    }
+
+    public static String join(String [] str, String delimiter)
+    {
+        String result = "";
+
+        for (int i = 0; i < str.length; ++i)
+            result += str[i] + delimiter;
+
+        return result.substring(0, result.length() - delimiter.length());
     }
 
     public static String padLeading(String s, int length, char ch)
