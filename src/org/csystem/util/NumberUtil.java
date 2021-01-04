@@ -9,6 +9,39 @@ import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
 public class NumberUtil {
+    public static String [] ones = {"" , "bir" , "iki" , "üç" , "dört" , "beş" , "altı" , "yedi" , "sekiz" , "dokuz"};
+    public static String [] tens = {"" , "on" , "yirmi" , "otuz" , "kırk" , "elli" , "altmış" , "yetmiş" , "seksen" , "doksan"};
+    public static String getTextByDigits(int a, int b, int c) {
+        String result = "";
+        if(a != 0) {
+            if (a != 1)
+                result += ones[a];
+            result += "yüz";
+        }
+
+        if(b != 0)
+            result += tens[b];
+
+        if(c != 0)
+            result += ones[c];
+
+        return result;
+    }
+    public static String numberToText3DigitsTR(int val) {
+        if(val == 0)
+            return "sıfır";
+
+        String result = val < 0 ? "eksi" : "";
+
+        val = Math.abs(val);
+        int a = val / 100;
+        int b = val / 10 % 10;
+        int c = val % 10;
+
+
+
+        return result + getTextByDigits(a,b,c);
+    }
     public static int [] getDigits(long val, int n)
     {
         val = Math.abs(val);
