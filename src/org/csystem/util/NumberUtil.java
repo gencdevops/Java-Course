@@ -37,9 +37,12 @@ public class NumberUtil {
         return result;
     }
 
-    public static int [] getDigits(long val)
-    {
+    public static int [] getDigits(long val) {
         return getDigits(val, 1);
+    }
+
+    public static int [] getDigits(int val) {
+        return getDigits((long)val);
     }
 
     public static int [] getDigitsInTwos(long val)
