@@ -36,9 +36,12 @@ public class DateUtil {
 
 		System.out.printf("%02d/%02d/%04d %s%n", day, month, year, daysOfWeekEN[dayOfWeek]);
 	}
+	public static String getDayOfWeekTR(int day, int month, int year) {
+		return daysOfWeekTR[getDayOfWeek(day, month, year)];
+	}
 
-	public static int getDayOfWeek(int day, int month, int year)
-	{
+
+	public static int getDayOfWeek(int day, int month, int year) {
 		int totalDays;
 
 		totalDays = getDayOfYear(day, month, year);
