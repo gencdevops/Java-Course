@@ -14,13 +14,19 @@ public class StudentInfo {
     }
 
     public String getBirthDateStr() {
-        String [] birthDateInfo = birthDate.split("[/]");
+        String [] birthDateInfo =birthDate.split("[/]");
 
         int day = Integer.parseInt(birthDateInfo[0]);
         int month = Integer.parseInt(birthDateInfo[1]);
         int year = Integer.parseInt(birthDateInfo[2]);
+        String monthStr =  DateUtil.getMonthTR(month);
+        return String.format("%d %s %d %s" , day , monthStr, year, DateUtil.getDayOfWeek(day, month, year));
+    }
 
-        return DateUtil.getDayOfWeekTR(day, month, year);
+    public String toString() {
+        double grade = getGrade();
+
+        return String.format("%s %s %f %s" , name , getBirthDateStr(), grade , grade > 50 ? "Başarılı" : "Başarısız");
     }
 
 
