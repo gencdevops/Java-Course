@@ -23,7 +23,7 @@ public class CommandPrompt {
             if(cmd.equals("quit"))
                 break;
 
-            System.out.printf("%s(cmd) %n" , cmd);
+            System.out.printf("(%s) %n" , cmd);
         }
 
     }
