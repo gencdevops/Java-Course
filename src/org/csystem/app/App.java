@@ -8,6 +8,7 @@ class App {
 
     public static void main(String [] args) {
         CommandPromptApp.run();
+        CommandPromptApp.run();
 
 
     }
