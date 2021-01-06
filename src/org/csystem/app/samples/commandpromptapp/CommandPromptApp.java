@@ -5,5 +5,6 @@ public class CommandPromptApp {
         CommandPrompt commandPrompt = new CommandPrompt("CSD");
 
         commandPrompt.run();
+
     }
 }
