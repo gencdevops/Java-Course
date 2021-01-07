@@ -27,4 +27,23 @@ public class ExamSimulation {
         }
     }
 
+    public void findAverages()
+    {
+        int totalNumberStudents = 0;
+        int totalGrades = 0;
+
+        for (int i = 0; i < grades.length; ++i) {
+            int total = ArrayUtil.sum(grades[i]);
+
+            averages[i] = (double)total / grades[i].length;
+            totalGrades += total;
+            totalNumberStudents += grades[i].length;
+        }
+
+        average = (double)totalGrades / totalNumberStudents;
+    }
+
+
+
+
 }
