@@ -43,6 +43,18 @@ public class ExamSimulation {
         average = (double)totalGrades / totalNumberStudents;
     }
 
+    public ExamSimulation(String name)
+    {
+        lectureName = name;
+    }
+
+    public void run()
+    {
+        fillGrades();
+        findAverages();
+    }
+
+
 
 
 
