@@ -79,9 +79,20 @@ public class ArrayUtil {
         display(1, a);
     }
 
+    public static void display(int [][] a)
+    {
+        display(1, a);
+    }
+
     public static void display(int n, int [] a)
     {
         display(' ', '\n', n, a);
+    }
+
+    public static void display(int n, int [][] a)
+    {
+        for (int i = 0; i < a.length; ++i)
+            display(n, a[i]);
     }
 
     public static void display(char sep, char end, int [] a)
@@ -156,11 +167,19 @@ public class ArrayUtil {
     }
 
     public static int [][] getRandomMatrix(Random r, int m, int n, int min, int max) {
+        int [][] a = new int[m][];
 
+        for(int i = 0; i < a.length; i++)
+            a[i] = getRandomArray(r , n , min , max);
+
+        return a;
     }
+
+
     public static int [][] getRandomMatrix(int m, int n, int min, int max) {
         return getRandomMatrix(new Random(), m, n, min, max);
     }
+
 
     public static int max(int [] a)
     {

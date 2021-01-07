@@ -1,6 +1,7 @@
 package org.csystem.app;
 
 import org.csystem.app.samples.commandpromptapp.CommandPromptApp;
+import org.csystem.util.ArrayUtil;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -18,20 +19,14 @@ class App {
         int m = Integer.parseInt(kb.nextLine());
 
         int [][] a;
-        a = new int [n][m];
+        a = ArrayUtil.getRandomMatrix(r , m, n, 50,100  );
 
 
-
-
-
-        for(int i = 0; i < a.length; i++)
-            for(int j=0; j < a[i].length; j++)
-                a[i][j] = r.nextInt(200);
-
-        for(int i = 0; i < a.length; i++){
-            for(int j=0; j < a[i].length; j++)
-                System.out.print(" " + a[i][j]);
+        for(int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++)
+                System.out.printf( "%02d ", a[i][j]);
             System.out.println();
-            }
+        }
+
     }
 }
