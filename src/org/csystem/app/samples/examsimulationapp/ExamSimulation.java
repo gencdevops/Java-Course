@@ -54,6 +54,17 @@ public class ExamSimulation {
         findAverages();
     }
 
+    public void displayGrades()
+    {
+        System.out.printf("%s dersinin sınav notları:%n", lectureName);
+        System.out.println("----------------------------------------------------------------");
+        for (int i = 0; i < grades.length; ++i) {
+            System.out.printf("%d. şube sınav notları:", i + 1);
+            ArrayUtil.display(3, grades[i]);
+        }
+        System.out.println("----------------------------------------------------------------");
+    }
+
 
 
 
