@@ -65,7 +65,17 @@ public class ExamSimulation {
         System.out.println("----------------------------------------------------------------");
     }
 
+    public void displayResults()
+    {
+        displayGrades();
+        System.out.printf("%s dersi için ortalamalar:%n", lectureName);
+        System.out.println("----------------------------------------------------------------");
+        for (int i = 0; i < averages.length; ++i)
+            System.out.printf("%d. şubenin ortalaması:%f%n", i + 1, averages[i]);
 
+        System.out.printf("Okul ortalaması:%f%n", average);
+        System.out.println("----------------------------------------------------------------");
+    }
 
 
 
