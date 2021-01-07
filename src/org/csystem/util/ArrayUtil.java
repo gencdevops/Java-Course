@@ -155,6 +155,13 @@ public class ArrayUtil {
         return getRandomArray(new Random(), n, min, max);
     }
 
+    public static int [][] getRandomMatrix(Random r, int m, int n, int min, int max) {
+
+    }
+    public static int [][] getRandomMatrix(int m, int n, int min, int max) {
+        return getRandomMatrix(new Random(), m, n, min, max);
+    }
+
     public static int max(int [] a)
     {
         int result = a[0];
