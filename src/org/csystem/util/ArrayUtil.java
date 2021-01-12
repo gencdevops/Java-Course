@@ -104,8 +104,8 @@ public class ArrayUtil {
     {
         String fmt = String.format("%%0%dd%%c", n);
 
-        for (int i = 0; i < a.length; ++i)
-            System.out.printf(fmt, a[i], sep); //n -> 2 -> "%02d%c"
+        for (int val : a)
+            System.out.printf(fmt, val, sep); //n -> 2 -> "%02d%c"
 
         System.out.print(end);
     }
