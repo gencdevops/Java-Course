@@ -306,8 +306,8 @@ public class ArrayUtil {
     {
         int total = 0;
 
-        for (int i = 0; i < a.length; ++i)
-            total += sum(a[i]);
+        for (int [] val : a)
+            total += sum(val);
 
         return total;
     }
