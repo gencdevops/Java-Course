@@ -91,8 +91,8 @@ public class ArrayUtil {
 
     public static void display(int n, int [][] a)
     {
-        for (int i = 0; i < a.length; ++i)
-            display(n, a[i]);
+        for (int [] val : a)
+            display(n, val);
     }
 
     public static void display(char sep, char end, int [] a)
