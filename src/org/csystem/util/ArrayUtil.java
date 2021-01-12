@@ -121,8 +121,8 @@ public class ArrayUtil {
     {
         int maxVal = max(data);
 
-        for (int i = 0; i < data.length; ++i) {
-            int nVal = (int)Math.ceil(data[i] * n / (double)maxVal);
+        for (int val : data) {
+            int nVal = (int)Math.ceil(val * n / (double)maxVal);
 
             while (nVal-- > 0)
                 System.out.print(ch);
