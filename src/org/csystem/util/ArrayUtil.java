@@ -113,8 +113,8 @@ public class ArrayUtil {
 
     public static void display(String [] str)
     {
-        for (int i = 0; i < str.length; ++i)
-            System.out.println(str[i]);
+        for (String val : str)
+            System.out.println(val);
     }
 
     public static void drawHistogram(int [] data, int n, char ch)
