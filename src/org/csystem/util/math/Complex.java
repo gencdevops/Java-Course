@@ -11,7 +11,7 @@ public class Complex {
         return new Complex(re1 + re2, im1 + im2);
     }
 
-    public static Complex subtract(double re1, double im1, double re2, double im2)
+    private static Complex subtract(double re1, double im1, double re2, double im2)
     {
         return add(re1, im1, -re2, -im2);
     }
