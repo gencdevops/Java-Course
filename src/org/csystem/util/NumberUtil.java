@@ -12,7 +12,7 @@ public class NumberUtil {
     private static String [] ones = {"", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"};
     private static String [] tens = {"", "on", "yürmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"};
 
-    public static String getTextByDigits(int a, int b, int c)
+    private static String getTextByDigits(int a, int b, int c)
     {
         String result = "";
 
@@ -31,7 +31,7 @@ public class NumberUtil {
         return result;
     }
 
-    public static String numberToText3DigitsTR(int val)
+    private static String numberToText3DigitsTR(int val)
     {
         if (val == 0)
             return "sıfır";
