@@ -1,3 +1,6 @@
+/*----------------------------------------------------------------------------------------------------------------------
+    IntValue sınıfı
+----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.util;
 
 public class IntValue {
@@ -13,7 +16,6 @@ public class IntValue {
     public static final IntValue ONE = of(1);
     public static final IntValue TEN = of(10);
 
-
     public static IntValue of(int val)
     {
         if (val < -128  || val > 127)
@@ -25,5 +27,59 @@ public class IntValue {
         return CACHE[val + 128];
     }
 
+    public int getVal()
+    {
+        return m_val;
+    }
 
+    public IntValue add(int val)
+    {
+        return IntValue.of(m_val + val);
+    }
+
+    public IntValue add(IntValue intValue)
+    {
+        return add(intValue.m_val);
+    }
+
+    public IntValue multiply(int val)
+    {
+        return IntValue.of(m_val * val);
+    }
+
+    public IntValue multiply(IntValue intValue)
+    {
+        return multiply(intValue.m_val);
+    }
+
+    public IntValue subtract(int val)
+    {
+        return add(-val);
+    }
+
+    public IntValue subtract(IntValue intValue)
+    {
+        return subtract(intValue.m_val);
+    }
+
+    public int compareTo(IntValue other)
+    {
+        return m_val - other.m_val;
+    }
+
+    public IntValue increment()
+    {
+        return add(1);
+    }
+
+    public IntValue decrement()
+    {
+        return subtract(1);
+    }
+
+
+    public String toString()
+    {
+        return m_val + "";
+    }
 }
