@@ -11,6 +11,10 @@ import static java.lang.Character.toUpperCase;
 import java.util.Random;
 
 public class StringUtil {
+    private StringUtil()
+    {
+    }
+
     public static String capitalize(String s)
     {
         if (s.isBlank())
@@ -163,8 +167,8 @@ public class StringUtil {
     {
         String result = "";
 
-        for (int i = 0; i < str.length; ++i)
-            result += str[i] + delimiter;
+        for (String s : str)
+            result += s + delimiter;
 
         return result.substring(0, result.length() - delimiter.length());
     }
