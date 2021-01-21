@@ -61,6 +61,9 @@ public class ArrayUtil {
         }
     }
 
+    private ArrayUtil()
+    {}
+
     public static void bubbleSort(int [] a)
     {
         bubbleSortAscending(a);
@@ -91,8 +94,8 @@ public class ArrayUtil {
 
     public static void display(int n, int [][] a)
     {
-        for (int [] val : a)
-            display(n, val);
+        for (int [] array : a)
+            display(n, array);
     }
 
     public static void display(char sep, char end, int [] a)
@@ -113,8 +116,8 @@ public class ArrayUtil {
 
     public static void display(String [] str)
     {
-        for (String val : str)
-            System.out.println(val);
+        for (String s : str)
+            System.out.println(s);
     }
 
     public static void drawHistogram(int [] data, int n, char ch)
@@ -306,8 +309,8 @@ public class ArrayUtil {
     {
         int total = 0;
 
-        for (int [] val : a)
-            total += sum(val);
+        for (int [] array : a)
+            total += sum(array);
 
         return total;
     }
