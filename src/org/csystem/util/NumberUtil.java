@@ -9,8 +9,8 @@ import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
 public class NumberUtil {
-    private static String [] ones = {"", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"};
-    private static String [] tens = {"", "on", "yürmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"};
+    private static final String [] ONES = {"", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"};
+    private static final String [] TENS = {"", "on", "yürmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"};
 
     private static String getTextByDigits(int a, int b, int c)
     {
@@ -18,15 +18,15 @@ public class NumberUtil {
 
         if (a != 0) {
             if (a != 1)
-                result += ones[a];
+                result += ONES[a];
             result += "yüz";
         }
 
         if (b != 0)
-            result += tens[b];
+            result += TENS[b];
 
         if (c != 0)
-            result += ones[c];
+            result += ONES[c];
 
         return result;
     }
@@ -58,6 +58,10 @@ public class NumberUtil {
             ;
 
         return digits;
+    }
+
+    private NumberUtil()
+    {
     }
 
     public static int countDigits(int val)
@@ -266,13 +270,13 @@ public class NumberUtil {
 
     public static String numToStr(long val)
     {
-        int [] digitsInThress = getDigitsInThrees(val);
+        int [] digitsInThrees = getDigitsInThrees(val);
         String result =  val < 0 ? "eksi" : "";
 
         val = Math.abs(val);
 
-        for (int i = 0; i < digitsInThress.length; ++i)
-            result += numberToText3DigitsTR(digitsInThress[i]) + ".....";
+        for (int d : digitsInThrees)
+            result += numberToText3DigitsTR(d) + ".....";
 
         return result;
     }
