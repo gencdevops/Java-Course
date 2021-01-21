@@ -14,7 +14,16 @@ public class IntValue {
     public static final IntValue TEN = of(10);
 
 
+    public static IntValue of(int val)
+    {
+        if (val < -128  || val > 127)
+            return new IntValue(val);
 
+        if (CACHE[val + 128] == null)
+            CACHE[val + 128] = new IntValue(val);
+
+        return CACHE[val + 128];
+    }
 
 
 }
