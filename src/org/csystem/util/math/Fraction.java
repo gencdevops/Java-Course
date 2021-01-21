@@ -44,7 +44,57 @@ public class Fraction {
                     break;
                 }
         }
+        private void configureSign()
+        {
+            if (m_b < 0) {
+                m_a = -m_a;
+                m_b = -m_b;
+            }
+        }
 
+        private void set(int a, int b)
+        {
+            if (a == 0) {
+                m_a = 0;
+                m_b = 1;
+                return;
+            }
+
+            m_a = a;
+            m_b = b;
+            configureSign();
+            simplify();
+        }
+
+        public Fraction()
+        {
+            m_b = 1;
+        }
+
+        public Fraction(int a)
+        {
+            m_a = a;
+            m_b = 1;
+        }
+
+        public Fraction(int a, int b)
+        {
+            check(a, b);
+            set(a, b);
+        }
+
+        public int getNumerator()
+        {
+            return m_a;
+        }
+
+        public void setNumerator(int a)
+        {
+            if (a == m_a)
+                return;
+
+            set(a, m_b);
+        }
 
 
 }
