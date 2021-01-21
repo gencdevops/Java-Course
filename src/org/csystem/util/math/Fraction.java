@@ -33,7 +33,17 @@ public class Fraction {
             }
         }
 
+        public void simplify()
+        {
+            int min = Math.min(Math.abs(m_a), m_b);
 
+            for (int i = min; i >= 2; --i)
+                if (m_a % i == 0 && m_b % i == 0) {
+                    m_a /= i;
+                    m_b /= i;
+                    break;
+                }
+        }
 
 
 
