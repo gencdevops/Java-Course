@@ -2,7 +2,7 @@ package org.csystem.app.samples.dateapp;
 
 import org.csystem.util.datetime.Date;
 
-public class DateApp {
+ class DateApp {
 	private final Date m_date;
 
 	public DateApp(int day, int month, int year)
