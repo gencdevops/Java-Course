@@ -1,4 +1,9 @@
+/*----------------------------------------------------------------------------------------------------------------------
+	Date sınıfı
+----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.util.datetime;
+
+import java.util.Random;
 
 public class Date {
     private static final int [] DAYS_OF_MONTHS = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -42,6 +47,7 @@ public class Date {
 
         return day <= getDays(month, year);
     }
+
     private static int getDays(int month, int year)
     {
         return month == 2 && isLeapYear(year) ? 29 : DAYS_OF_MONTHS[month];
@@ -110,5 +116,136 @@ public class Date {
         }
 
         return suffix;
+    }
+
+    public static Date of(int year)
+    {
+        return of(new Random(), year);
+    }
+
+    public static Date of(Random r, int year)
+    {
+        return of(r, year, year);
+    }
+
+    public static Date of(int minYear, int maxYear)
+    {
+        return of(new Random(), minYear, maxYear);
+    }
+
+    public static Date of(Random r, int minYear, int maxYear) //[minYear, maxYear]
+    {
+        int year = r.nextInt(maxYear - minYear + 1) + minYear;
+        int month = r.nextInt(12) + 1;
+        int day = r.nextInt(getDays(month, year)) + 1;
+
+        return new Date(day, month, year);
+    }
+
+    //...
+
+    public Date(int day, int monthValue, int year)
+    {
+        checkForDate(day, monthValue, year, "Invalid date values");
+        set(day, monthValue, year);
+    }
+
+    public int getDay()
+    {
+        return m_day;
+    }
+
+    public void setDay(int day)
+    {
+        if (day == m_day)
+            return;
+
+        checkForDay(day);
+        set(day, m_month, m_year);
+    }
+
+    public int getMonthValue()
+    {
+        return m_month;
+    }
+
+    public void setMonthValue(int monthValue)
+    {
+        if (monthValue == m_month)
+            return;
+
+        checkForMonth(monthValue);
+        set(m_day, monthValue, m_year);
+    }
+
+    public int getYear()
+    {
+        return m_year;
+    }
+
+    public void setYear(int year)
+    {
+        if (year == m_year)
+            return;
+
+        checkForYear(year);
+        set(m_day, m_month, year);
+    }
+
+    public int getDayOfWeekValue()
+    {
+        return m_dayOfWeek;
+    }
+
+    public String getDayOfWeekTR()
+    {
+        return DAYS_OF_WEEK_TR[m_dayOfWeek];
+    }
+
+    public String getDayOfWeekEN()
+    {
+        return DAYS_OF_WEEK_EN[m_dayOfWeek];
+    }
+
+    public boolean isLeapYear() {return isLeapYear(m_year);}
+
+    public boolean isWeekDay()
+    {
+        return !isWeekEnd();
+    }
+
+    public boolean isWeekEnd()
+    {
+        return m_dayOfWeek == 0 || m_dayOfWeek == 6;
+    }
+
+    public String toString()
+    {
+        return toString('/');
+    }
+
+    public String toString(char delimiter)
+    {
+        return String.format("%02d%c%02d%c%04d", m_day, delimiter, m_month, delimiter, m_year);
+    }
+
+    public String toStringTR()
+    {
+        return String.format("%d %s %d", m_day, MONTHS_TR[m_month], m_year);
+    }
+
+    public String toStringEN()
+    {
+        return String.format("%d%s %s %d", m_day,getDaySuffix(), MONTHS_EN[m_month], m_year);
+    }
+
+    public String toLongDateStringTR()
+    {
+        return String.format("%s %s", toStringTR(), getDayOfWeekTR());
+    }
+
+    public String toLongDateStringEN()
+    {
+        return String.format("%s %s", toStringEN(), getDayOfWeekEN());
     }
 }
