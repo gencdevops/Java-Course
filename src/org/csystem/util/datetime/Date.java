@@ -1,6 +1,6 @@
 package org.csystem.util.datetime;
 
-public class date {
+public class Date {
     private static final int [] DAYS_OF_MONTHS = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private static final String [] DAYS_OF_WEEK_TR = {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"};
     private static final String [] DAYS_OF_WEEK_EN = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
@@ -25,6 +25,15 @@ public class date {
         return totalDays % 7;
     }
 
+    private static int getDayOfYear(int day, int month, int year)
+    {
+        int dayOfYear = day;
+
+        for (int m = month - 1; m >= 1; --m)
+            dayOfYear += DAYS_OF_MONTHS[m];
+
+        return month > 2 && isLeapYear(year) ? dayOfYear + 1 : dayOfYear;
+    }
 
 
 
