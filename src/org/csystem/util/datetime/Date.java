@@ -58,4 +58,33 @@ public class Date {
         System.exit(0); //Exception konusuna kadar sabredin
     }
 
+    private static void checkForDate(int day, int month, int year, String message)
+    {
+        if (!isValidDate(day, month, year))
+            doWorkForException(message);
+    }
+
+    private void checkForDay(int val)
+    {
+        checkForDate(val, m_month, m_year, "Invalid day value");
+    }
+
+    private void checkForMonth(int val)
+    {
+        checkForDate(m_day, val, m_year, "Invalid month value");
+    }
+
+    private void checkForYear(int val)
+    {
+        checkForDate(m_day, m_month, val, "Invalid year value");
+    }
+
+    private void set(int day, int monthValue, int year)
+    {
+        m_day = day;
+        m_month = monthValue;
+        m_year = year;
+        m_dayOfWeek = getDayOfWeek(m_day, m_month, m_year);
+    }
+
 }
