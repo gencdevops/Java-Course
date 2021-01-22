@@ -35,7 +35,27 @@ public class Date {
         return month > 2 && isLeapYear(year) ? dayOfYear + 1 : dayOfYear;
     }
 
+    private static boolean isValidDate(int day, int month, int year)
+    {
+        if (day < 1 || day > 31 || month < 1 || month > 12 || year < 1900)
+            return false;
 
+        return day <= getDays(month, year);
+    }
+    private static int getDays(int month, int year)
+    {
+        return month == 2 && isLeapYear(year) ? 29 : DAYS_OF_MONTHS[month];
+    }
 
+    private static boolean isLeapYear(int year)
+    {
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+    }
+
+    private static void doWorkForException(String message)
+    {
+        System.out.println(message);
+        System.exit(0); //Exception konusuna kadar sabredin
+    }
 
 }
