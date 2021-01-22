@@ -13,6 +13,18 @@ public class date {
     private int m_year;
     private int m_dayOfWeek;
 
+    private static int getDayOfWeek(int day, int month, int year)
+    {
+        int totalDays;
+
+        totalDays = getDayOfYear(day, month, year);
+
+        for (int y = 1900; y < year; ++y)
+            totalDays += isLeapYear(y) ? 366 : 365;
+
+        return totalDays % 7;
+    }
+
 
 
 
