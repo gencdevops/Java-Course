@@ -7,7 +7,10 @@ class App {
 
     public static void main(String [] args) {
 
-
+        System.out.println(Direction.LEFT.ordinal());
     }
 }
 
+enum Direction {
+    LEFT , TOP, BOTTOM, RİGHT
+}
