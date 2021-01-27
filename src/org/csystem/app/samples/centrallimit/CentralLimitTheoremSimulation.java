@@ -1,5 +1,8 @@
 package org.csystem.app.samples.centrallimit;
 
+import org.csystem.util.ArrayUtil;
+
+import java.util.Arrays;
 import java.util.Random;
 
 public class CentralLimitTheoremSimulation {
@@ -39,7 +42,21 @@ public class CentralLimitTheoremSimulation {
         m_divisor = m_max / m_counts.length;
     }
 
+    public int [] getCounts()
+    {
+        return Arrays.copyOf(m_counts, m_counts.length);
+    }
 
+    public void run()
+    {
+        start();
+    }
 
-
+    public void displayHistogram(int n, char ch)
+    {
+        ArrayUtil.drawHistogram(m_counts, n, ch);
+    }
 }
+
+
+
