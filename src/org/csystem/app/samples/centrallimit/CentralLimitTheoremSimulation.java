@@ -29,6 +29,16 @@ public class CentralLimitTheoremSimulation {
         }
     }
 
+    public CentralLimitTheoremSimulation(int max, int sampleCount, int count, int n)
+    {
+        m_max = max;
+        m_sampleCount = sampleCount;
+        m_count = count;
+        m_counts = new int[n];
+        m_random = new Random();
+        m_divisor = m_max / m_counts.length;
+    }
+
 
 
 
