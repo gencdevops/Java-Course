@@ -20,6 +20,14 @@ public class CentralLimitTheoremSimulation {
         return (double)sum / m_sampleCount;
     }
 
+    private void start()
+    {
+        for (int i = 0; i < m_count; ++i) {
+            double avg = calculateSamplesAverage();
+
+            ++m_counts[(int)avg / m_divisor];
+        }
+    }
 
 
 
