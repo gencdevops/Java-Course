@@ -9,8 +9,8 @@ public class Date {
     private static final int [] DAYS_OF_MONTHS = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private static final String [] DAYS_OF_WEEK_TR = {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"};
     private static final String [] DAYS_OF_WEEK_EN = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
-    private static final String [] MONTHS_TR = {"", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
-            "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"};
+
+
     private static final String [] MONTHS_EN = {"", "Jan", "Feb", "Mar", "Apr", "May", "JUn", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
     private int m_day;
@@ -53,10 +53,7 @@ public class Date {
         return month == 2 && isLeapYear(year) ? 29 : DAYS_OF_MONTHS[month];
     }
 
-    private static boolean isLeapYear(int year)
-    {
-        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-    }
+
 
     private static void doWorkForException(String message)
     {

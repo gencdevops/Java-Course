@@ -5,6 +5,13 @@ public enum Month {
 
     private final int m_days;
 
+    private static boolean isLeapYear(int year)
+    {
+        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+    }
+
+
+
     Month(int days) {
         m_days = days;
     }
