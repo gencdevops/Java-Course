@@ -8,6 +8,21 @@ class App {
 
 
 
+
     }
 }
 
+class Taxi {
+private Driver m_driver;
+
+
+}
+
+class Driver {
+
+}
+
+class Client {
+
+
+}
