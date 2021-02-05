@@ -152,8 +152,7 @@ public class Date {
 
     public Date(int day, Month month, int year)
     {
-        checkForDate(day, month.ordinal() + 1, year, "Invalid date values");
-        set(day, month.ordinal() + 1, year);
+       this(day, month.ordinal() + 1, year);
     }
 
     public int getDay()
