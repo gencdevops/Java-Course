@@ -5,7 +5,10 @@ package org.csystem.util.datetime;
 
 import java.util.Random;
 
+
+
 public class Time {
+
     private int m_hour;
     private int m_minute;
     private int m_second;
@@ -89,6 +92,10 @@ public class Time {
     }
 
     //...
+
+    public Time(int hour, int minute, int second) {
+        this(hour, minute, second, 0);
+    }
 
     public Time(int hour, int minute, int second, int millisecond)
     {
