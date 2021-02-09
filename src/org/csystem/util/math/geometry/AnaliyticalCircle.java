@@ -24,4 +24,7 @@ public class AnaliyticalCircle extends Circle  {
     public void setCenter(Point point) {
         setCenter(point);
     }
+    public void offSet(int dx , int dy) {
+        m_center.offset(dx, dy);
+    }
 }
