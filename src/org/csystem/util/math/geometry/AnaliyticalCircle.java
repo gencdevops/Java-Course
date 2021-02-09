@@ -10,4 +10,7 @@ public class AnaliyticalCircle extends Circle  {
     public int getX() {return m_center.x;}
     public int getY() {return m_center.y;}
 
+    public void setX(int val) {m_center.x = val;}
+    public void setY(int val) {m_center.y = val;}
+
 }
