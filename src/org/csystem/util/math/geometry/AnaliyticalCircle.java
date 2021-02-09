@@ -17,5 +17,9 @@ public class AnaliyticalCircle extends Circle  {
     public void setX(int val) {m_center.x = val;}
     public void setY(int val) {m_center.y = val;}
 
+    public void setCenter(int x, int y) {
+        setX(x);
+        setY(y);
+    }
 
 }
