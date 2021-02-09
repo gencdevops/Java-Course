@@ -21,5 +21,7 @@ public class AnaliyticalCircle extends Circle  {
         setX(x);
         setY(y);
     }
-
+    public void setCenter(Point point) {
+        setCenter(point);
+    }
 }
