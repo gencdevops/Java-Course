@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Manager class initialize" />
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Manager class constructor and getter setter methods added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +78,7 @@
       <updated>1608906414318</updated>
       <workItem from="1608906415720" duration="102000" />
       <workItem from="1612948801438" duration="32000" />
-      <workItem from="1612948946216" duration="4020000" />
+      <workItem from="1612948946216" duration="4336000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612957501451</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Manager class constructor and getter setter methods added">
+      <created>1612957846267</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612957846267</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +186,7 @@
     <MESSAGE value="Worker class initialize" />
     <MESSAGE value="Worker getter and setter methods added" />
     <MESSAGE value="Manager class initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Manager class initialize" />
+    <MESSAGE value="Manager class constructor and getter setter methods added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manager class constructor and getter setter methods added" />
   </component>
 </project>
