@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Employee class variable initialize">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Employee constructor added">
       <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
       <updated>1608906414318</updated>
       <workItem from="1608906415720" duration="102000" />
       <workItem from="1612948801438" duration="32000" />
-      <workItem from="1612948946216" duration="1084000" />
+      <workItem from="1612948946216" duration="1416000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -102,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612954457221</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Employee constructor added">
+      <created>1612954850268</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612954850268</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,7 @@
     <MESSAGE value="try" />
     <MESSAGE value="companyapp Employee initialize" />
     <MESSAGE value="Employee class variable initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Employee class variable initialize" />
+    <MESSAGE value="Employee constructor added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Employee constructor added" />
   </component>
 </project>
