@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="CompanyApp class initialize">
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="CompanyApp test">
+      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/SalesManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/CompanyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/CompanyApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <updated>1608906414318</updated>
       <workItem from="1608906415720" duration="102000" />
       <workItem from="1612948801438" duration="32000" />
-      <workItem from="1612948946216" duration="4992000" />
+      <workItem from="1612948946216" duration="5704000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612958165752</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CompanyApp test">
+      <created>1612958547799</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612958547799</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +205,7 @@
     <MESSAGE value="Manager class initialize" />
     <MESSAGE value="Manager class constructor and getter setter methods added" />
     <MESSAGE value="CompanyApp class initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="CompanyApp class initialize" />
+    <MESSAGE value="CompanyApp test" />
+    <option name="LAST_COMMIT_MESSAGE" value="CompanyApp test" />
   </component>
 </project>
