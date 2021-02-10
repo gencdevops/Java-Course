@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Employee getter and setter methods added">
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Employee.java" afterDir="false" />
-    </list>
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Employee HumanResource initialize" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +36,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1m9WiOo41551PJlluKWSjM0tNYd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,7 +78,7 @@
       <updated>1608906414318</updated>
       <workItem from="1608906415720" duration="102000" />
       <workItem from="1612948801438" duration="32000" />
-      <workItem from="1612948946216" duration="1951000" />
+      <workItem from="1612948946216" duration="2274000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -116,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612955171206</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Employee HumanResource initialize">
+      <created>1612955720141</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612955720141</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +146,7 @@
     <MESSAGE value="Employee class variable initialize" />
     <MESSAGE value="Employee constructor added" />
     <MESSAGE value="Employee getter and setter methods added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Employee getter and setter methods added" />
+    <MESSAGE value="Employee HumanResource initialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Employee HumanResource initialize" />
   </component>
 </project>
