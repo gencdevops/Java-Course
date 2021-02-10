@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Employee HumanResource.payInsurance method added">
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Worker.java" afterDir="false" />
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Worker getter and setter methods added">
+      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <updated>1608906414318</updated>
       <workItem from="1608906415720" duration="102000" />
       <workItem from="1612948801438" duration="32000" />
-      <workItem from="1612948946216" duration="3175000" />
+      <workItem from="1612948946216" duration="3682000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -131,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612955932131</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Worker class initialize">
+      <created>1612956839427</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612956839427</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Worker getter and setter methods added">
+      <created>1612957200828</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612957200828</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +171,8 @@
     <MESSAGE value="Employee getter and setter methods added" />
     <MESSAGE value="Employee HumanResource initialize" />
     <MESSAGE value="Employee HumanResource.payInsurance method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Employee HumanResource.payInsurance method added" />
+    <MESSAGE value="Worker class initialize" />
+    <MESSAGE value="Worker getter and setter methods added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worker getter and setter methods added" />
   </component>
 </project>
