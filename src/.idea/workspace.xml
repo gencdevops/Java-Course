@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Employee constructor added">
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Employee getter and setter methods added">
+      <change beforePath="$PROJECT_DIR$/org/csystem/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,7 @@
       <updated>1608906414318</updated>
       <workItem from="1608906415720" duration="102000" />
       <workItem from="1612948801438" duration="32000" />
-      <workItem from="1612948946216" duration="1416000" />
+      <workItem from="1612948946216" duration="1951000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612954850268</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Employee getter and setter methods added">
+      <created>1612955171206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612955171206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +139,7 @@
     <MESSAGE value="companyapp Employee initialize" />
     <MESSAGE value="Employee class variable initialize" />
     <MESSAGE value="Employee constructor added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Employee constructor added" />
+    <MESSAGE value="Employee getter and setter methods added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Employee getter and setter methods added" />
   </component>
 </project>

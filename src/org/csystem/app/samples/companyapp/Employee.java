@@ -12,14 +12,19 @@ public class Employee {
     public String getCitizenId() {
         return m_citizenId;
     }
+
     public void setCitizenId(String citizenId) {
         m_citizenId = citizenId;
     }
+
     public String getName() {
         return m_name;
     }
+
     public void setName(String name) {
         this.m_name = name;
     }
+
+
 
 }
