@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="CompanyApp test">
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/companyapp/SalesManager.java" afterDir="false" />
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="SalesManager initialize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/csystem/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +56,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,7 +83,8 @@
       <updated>1608906414318</updated>
       <workItem from="1608906415720" duration="102000" />
       <workItem from="1612948801438" duration="32000" />
-      <workItem from="1612948946216" duration="5704000" />
+      <workItem from="1612948946216" duration="7510000" />
+      <workItem from="1613033817459" duration="1210000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -174,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612958547799</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="SalesManager initialize">
+      <created>1612960301135</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612960301135</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +216,7 @@
     <MESSAGE value="Manager class constructor and getter setter methods added" />
     <MESSAGE value="CompanyApp class initialize" />
     <MESSAGE value="CompanyApp test" />
-    <option name="LAST_COMMIT_MESSAGE" value="CompanyApp test" />
+    <MESSAGE value="SalesManager initialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="SalesManager initialize" />
   </component>
 </project>
