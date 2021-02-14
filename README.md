@@ -1,3 +1,3 @@
 # JavaCourse
 Java Examples
-<h3> It consists of small applications and utility classes that I have written. </h3>
+<h3> Consists of codes written in C and System(Oğuz Karan) education </h3>
