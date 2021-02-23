@@ -1,6 +1,10 @@
-package org.csystem.app.samples.examsimulationapp;
+package org.csystem.app.samples.simulation.exam;
 
 public class ExamSimulationApp {
+    private ExamSimulationApp()
+    {
+    }
+
     public static void run()
     {
         ExamSimulation physicSimulation = new ExamSimulation("Fizik");

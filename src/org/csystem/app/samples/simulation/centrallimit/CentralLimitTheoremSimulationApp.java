@@ -1,6 +1,6 @@
-package org.csystem.app.samples.centrallimit;
+package org.csystem.app.samples.simulation.centrallimit;
 
-import org.csystem.util.ArrayUtil;
+import org.csystem.util.*;
 
 public class CentralLimitTheoremSimulationApp {
     private CentralLimitTheoremSimulationApp()

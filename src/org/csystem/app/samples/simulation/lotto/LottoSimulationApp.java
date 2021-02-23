@@ -1,4 +1,4 @@
-package org.csystem.app.samples.lottosimulationapp;
+package org.csystem.app.samples.simulation.lotto;
 
 public class LottoSimulationApp {
 	public static void displayProbabilities(int firstGameWinCount, int secondGameWinCount, int thirdGameWinCount, int n)
@@ -19,13 +19,13 @@ public class LottoSimulationApp {
 		for (int i = 0; i < n; ++i) {
 			lotto.play();
 			
-			if (lotto.firstGameWinFlag)
+			if (lotto.isFirstGameWin())
 				++firstGameWinCount;
 			
-			if (lotto.secondGameWinFlag)
+			if (lotto.isSecondGameWin())
 				++secondGameWinCount;
 			
-			if (lotto.thirdGameWinFlag)
+			if (lotto.isThirdGameWin())
 				++thirdGameWinCount;
 		}		
 		
