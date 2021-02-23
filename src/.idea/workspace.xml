@@ -19,20 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="RandomObjectArrayGenerator getObjects adde">
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/exam/ExamSimulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/lotto/Lotto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/lotto/LottoSimulationJustFirstGameApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/randomobjectgenerator/RandomObjectArrayGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/randomobjectgenerator/RandomObjectGeneratorSimulation.java" afterDir="false" />
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment=".">
+      <change afterPath="$PROJECT_DIR$/org/csystem/util/MutableIntValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/centrallimit/CentralLimitTheoremSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/centrallimit/CentralLimitTheoremSimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/centrallimit/CentralLimitTheoremSimulationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/centrallimit/CentralLimitTheoremSimulationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/examsimulationapp/ExamSimulation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/examsimulationapp/ExamSimulationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/exam/ExamSimulationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/lottosimulationapp/Lotto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/lottosimulationapp/LottoSimulationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/simulation/lotto/LottoSimulationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/randomobjectgeneratorapp/RandomObjectArrayGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/csystem/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +65,37 @@
       <recent name="org.csystem.app.samples.randomobjectgeneratorapp" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.csystem.app.App" />
+      <module name="Sample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.csystem.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -92,6 +113,7 @@
       <workItem from="1613033817459" duration="4654000" />
       <workItem from="1613121817127" duration="590000" />
       <workItem from="1613203411014" duration="77000" />
+      <workItem from="1614069224588" duration="2425000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -205,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613037988642</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary=".">
+      <created>1614069353254</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614069353254</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +269,7 @@
     <MESSAGE value="SalesManager initialize" />
     <MESSAGE value="RandomObjectArrayGenerator initialize" />
     <MESSAGE value="RandomObjectArrayGenerator getObjects adde" />
-    <option name="LAST_COMMIT_MESSAGE" value="RandomObjectArrayGenerator getObjects adde" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
