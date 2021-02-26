@@ -17,4 +17,9 @@ public class SalesManager extends Manager{
         this.m_extra = m_extra;
     }
 
+    public double calculateInsurancePayment()
+    {
+        return super.calculateInsurancePayment() + m_extra;
+    }
+
 }
