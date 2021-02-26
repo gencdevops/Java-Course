@@ -1,13 +1,13 @@
 package org.csystem.app;
+
+
 class App {
 
     public static void main(String [] args) {
 
-        String s = "ankara";
+        System.out.println(10 + 20 + "istanbul"); //30istanbul
 
-        s = s.substring(2, 5).toUpperCase();
-
-        System.out.println(s);
+        System.out.println("istanbul" + 10 + 20); //istanbul1020
 
 
     }

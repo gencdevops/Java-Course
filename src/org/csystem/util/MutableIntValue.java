@@ -11,9 +11,26 @@ public int getVal() {
     return m_val;
 }
 
-public void setVal(int val) {
+public MutableIntValue setVal(int val) {
     m_val = val;
+    return this;
 }
+
+public MutableIntValue add(int val) {
+    m_val += val;
+    return this;
+}
+
+public MutableIntValue subtract(int val) {
+    add(-val);
+    return this;
+}
+
+public MutableIntValue multiply(int val) {
+    m_val *= val;
+    return this;
+}
+
 
 
 }
