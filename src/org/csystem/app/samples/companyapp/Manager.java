@@ -22,5 +22,9 @@ public class Manager extends Employee{
     public void setDepartment(String department) {
         this.m_department = department;
     }
+    public double calculateInsurancePayment()
+    {
+        return m_salary * 1.5;
+    }
 
 }
