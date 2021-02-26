@@ -10,4 +10,14 @@ public class CSDArrayList {
         System.out.println(message);
         System.exit(-1); //exception işlemleri konusuna kadar sabredin
     }
+
+    private static void doWorkForIndexOutOfException(String message)
+    {
+        System.out.println(message);
+        System.exit(-1); //exception işlemleri konusuna kadar sabredin
+    }
+
+
+
+
 }
