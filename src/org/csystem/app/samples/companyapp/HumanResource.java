@@ -5,5 +5,6 @@ public class HumanResource {
 
         System.out.printf("Citizen ıd : %s" , employee.getCitizenId());
         System.out.printf("Name : %s " , employee.getName());
+        System.out.printf("Payment:%f%n", employee.calculateInsurancePayment());
     }
 }
