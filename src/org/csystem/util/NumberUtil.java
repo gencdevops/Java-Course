@@ -3,14 +3,16 @@
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.util;
 
-import static java.lang.Math.abs;
-import static java.lang.Math.log10;
-import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
+import static java.lang.Math.*;
 
 public class NumberUtil {
-    private static final String [] ONES = {"", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"};
-    private static final String [] TENS = {"", "on", "yürmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"};
+    private static final String [] ONES;
+    private static final String [] TENS;
+
+    static {
+        ONES = new String[]{"", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"};
+        TENS = new String[]{"", "on", "yürmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"};
+    }
 
     private static String getTextByDigits(int a, int b, int c)
     {
