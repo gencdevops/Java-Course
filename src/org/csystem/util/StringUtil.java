@@ -8,6 +8,7 @@ import static java.lang.Character.isWhitespace;
 import static java.lang.Character.toLowerCase;
 import static java.lang.Character.toUpperCase;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class StringUtil {
@@ -173,6 +174,21 @@ public class StringUtil {
         return result.substring(0, result.length() - delimiter.length());
     }
 
+    public static String join(ArrayList list, char delimiter)
+    {
+        return join(list, delimiter + "");
+    }
+
+    public static String join(ArrayList list, String delimiter)
+    {
+        String result = "";
+
+        for (Object obj : list)
+            result += (String)obj + delimiter;
+
+        return result.substring(0, result.length() - delimiter.length());
+    }
+
     public static String padLeading(String s, int length, char ch)
     {
         if (length <= s.length())
@@ -206,6 +222,23 @@ public class StringUtil {
         ArrayUtil.reverse(chars);
 
         return String.valueOf(chars);
+    }
+
+    public static String [] split(String str, String delimiters, StringSplitOptions stringSplitOptions)
+    {
+        String pattern = "[";
+
+        int length = delimiters.length();
+
+        for (int i = 0; i < length; ++i) {
+            char delim = delimiters.charAt(i);
+
+            pattern += delim == '[' || delim == ']' ? "\\" + delim : delim;
+        }
+
+        pattern += stringSplitOptions == StringSplitOptions.REMOVE_EMPTY_ENTRIES ? "]+" : "]";
+
+        return str.split(pattern);
     }
 
     public static String trimLeading(String s)
