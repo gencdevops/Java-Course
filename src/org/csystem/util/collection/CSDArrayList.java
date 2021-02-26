@@ -17,7 +17,17 @@ public class CSDArrayList {
         System.exit(-1); //exception işlemleri konusuna kadar sabredin
     }
 
+    private void checkForIndex(int index)
+    {
+        if (index < 0 || index >= m_index)
+            doWorkForIndexOutOfException("Index Out of bounds");
+    }
 
+    private void checkCapacityValue(int capacity)
+    {
+        if (capacity < 0)
+            doWorkForIllegalArgumentException("Capacity can not be negative");
+    }
 
 
 }
