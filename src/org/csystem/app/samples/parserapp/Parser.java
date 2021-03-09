@@ -3,8 +3,12 @@ package org.csystem.app.samples.parserapp;
 public class Parser {
     private Source m_source;
 
+    public Parser() {
+
+    }
+
       public Parser(Source source) {
-            m_source = source;
+            this.setSource(source);
         }
 
         public void setSource(Source source) {

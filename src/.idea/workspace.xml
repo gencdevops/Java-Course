@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="Parser class initialize">
-      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/parserapp/StringSource.java" afterDir="false" />
+    <list default="true" id="c668b861-d2c4-4a23-b0a0-bad2d79df502" name="Default Changelist" comment="StringSource initialize">
+      <change afterPath="$PROJECT_DIR$/org/csystem/app/samples/parserapp/ParserApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org/csystem/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/parserapp/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/parserapp/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org/csystem/app/samples/parserapp/StringSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/org/csystem/app/samples/parserapp/StringSource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +128,7 @@
       <workItem from="1614324921431" duration="605000" />
       <workItem from="1614328266146" duration="165000" />
       <workItem from="1614335133707" duration="1369000" />
-      <workItem from="1615290112726" duration="3536000" />
+      <workItem from="1615290112726" duration="4356000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1612949066091</created>
@@ -375,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615291690843</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="StringSource initialize">
+      <created>1615294516628</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1615294516628</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +401,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Worker getter and setter methods added" />
     <MESSAGE value="Manager class initialize" />
     <MESSAGE value="Manager class constructor and getter setter methods added" />
     <MESSAGE value="CompanyApp class initialize" />
@@ -419,6 +425,7 @@
     <MESSAGE value="parserapp Source class initialize" />
     <MESSAGE value="Source.java getChar added" />
     <MESSAGE value="Parser class initialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Parser class initialize" />
+    <MESSAGE value="StringSource initialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="StringSource initialize" />
   </component>
 </project>

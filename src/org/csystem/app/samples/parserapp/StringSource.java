@@ -9,6 +9,7 @@ public class StringSource extends Source{
 
     }
 
+
     @Override
     public int getChar() {
         return m_index == m_str.length() ? -1 : m_str.charAt(m_index++);
